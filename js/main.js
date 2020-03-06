@@ -13,7 +13,7 @@ function sendCalculation(n1, n2, op) {
         type: 'POST',
         data: {num1: n1, num2: n2, oper: op},
         success: function (val) {
-            console.log(val);
+            //console.log(val);
             $("#answer").html("The answer is: " + val);
         },
         error: function () {
@@ -32,7 +32,7 @@ function calculate() {
         let operator = $("input[name='operator']:checked").val();
         num1 = parseFloat(num1);
         num2 = parseFloat(num2);
-        console.log("js file says " + num1 + " " + operator + " " + num2); //for debug
+//        console.log("js file says " + num1 + " " + operator + " " + num2); for debug
         sendCalculation(num1, num2, operator);
     } else {
         $("#answer").html("Your inputs must be a valid numbers.");
