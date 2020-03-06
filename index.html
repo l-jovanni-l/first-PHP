@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Server Side Calculator</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="favicon.gif" type="image/gif">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/main.css" rel="stylesheet">
+    </head>
+    <body>
+        <div id="page-body">
+            <form>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-4 offset-sm-4">
+                            <div class="form-group input-space">
+                                <input class="form-control" type="text" id="number1" name="number1" maxlength="10" value="10">
+                            </div>
+                            <div class="form-group input-space">
+                                <input class="form-control" type="text" id="number2" name="number2" maxlength="10" value="2.10">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-4 offset-sm-4">
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-xs-6 radio-padding">
+                                        <input type="radio" id="add" name="operator" value="add" checked>
+                                        <label for="add">Add</label><br>
+                                        <input type="radio" id="subtract" name="operator" value="sub">
+                                        <label for="subtract">Subtract</label><br>
+                                    </div>
+                                    <div class="col-xs-6 radio-padding">
+                                        <input type="radio" id="multiply" name="operator" value="mul">
+                                        <label for="multiply">Multiply</label><br>
+                                        <input type="radio" id="divide" name="operator" value="div">
+                                        <label for="divide">Divide</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-4 offset-sm-4">
+                        <!-- notice this button is outside the form.
+                        this is so it does not attempt to submit the form
+                        like a normal HTML5 form. we want to use ajax and
+                        not HTML5 to submit the form.
+                        -->
+                        <button class="form-control" id="calculate">Calculate</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div id="answer" class="col-xs-12 col-sm-4 offset-sm-4 centered">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>

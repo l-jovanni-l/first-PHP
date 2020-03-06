@@ -1,0 +1,22 @@
+
+body{
+    font-size: 120%;
+}
+
+#page-body {
+    margin-top: 50px;
+}
+
+.input-space{
+    width: 100%;
+    padding: 0px 5px;
+}
+
+.radio-padding{
+   padding-left: 30px;
+}
+
+#answer{
+    text-align: center;
+    margin-top: 20px;
+}
